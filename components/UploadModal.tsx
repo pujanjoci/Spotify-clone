@@ -108,7 +108,7 @@ const UploadModal = () => {
       
       router.refresh();
       setIsLoading(false);
-      toast.success('Song created!');
+      toast.success('Song Uploded!');
       reset();
       uploadModal.onClose();
     } catch (error) {
@@ -157,7 +157,7 @@ const UploadModal = () => {
             {...register('image', { required: true })}
           />
         </div>
-        <Button disabled={isLoading} type="submit">
+        <Button disabled={isLoading} type="submit" className="text-neutral-300">
           Upload
         </Button>
       </form>
