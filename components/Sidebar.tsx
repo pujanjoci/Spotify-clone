@@ -12,10 +12,9 @@ import Box from './Box';
 import SidebarItem from './SidebarItem';
 import Library from './Library';
 
-
 interface SidebarProps {
     children: React.ReactNode;
-    songs: Song[]
+    songs: Song[];
 };
 
 const Sidebar: React.FC<SidebarProps> = ({
@@ -28,16 +27,16 @@ const Sidebar: React.FC<SidebarProps> = ({
         {
             icon: HiHome,
             label: 'Home',
-            active: pathname !== '/search',
+            active: pathname === '/',
             href: '/',
         },
         {
             icon: BiSearch,
             label: 'Search',
-            active: pathname === '/search',
+            active: pathname.includes('/search'),
             href: '/search',
         } 
-    ], []);
+    ], [pathname]);
 
     return ( 
         <div className='flex h-full'>
@@ -63,7 +62,6 @@ const Sidebar: React.FC<SidebarProps> = ({
             <main className='h-full flex-1 overflow-y-auto py-2'>
                 {children}
             </main>
-
         </div>
     );
 }
