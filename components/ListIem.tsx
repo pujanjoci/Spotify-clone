@@ -36,8 +36,8 @@ const ListItem: React.FC<ListItemsProps> = ({
             <p className="font-medium trucate py-5">
                 {name}
             </p>
-            <div className="absolute transition opacity-0 rounded-full flex items-center justify-center right-5 bg-green-500 p-4 drop-shadow-md group-hover:opacity-100 hover:scale-110">
-                <FaPlay className="text-black" />
+            <div className="absolute transition opacity-0 rounded-full flex items-center justify-center right-3 bg-green-500 hover:bg-green-600 p-4 drop-shadow-md group-hover:opacity-100 hover:scale-110">
+                <FaPlay className="text-neutral-800 opacity-60" />
             </div>
         </button>
      );
