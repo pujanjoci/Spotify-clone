@@ -1,36 +1,151 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1> 🎧 Spotify Clone: </h1>
 
-## Getting Started
+Welcome to the **Spotify Clone** project! This journey showcases how to build a full-featured music streaming application using the latest web technologies.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📜 Overview
+
+In this project, we embarked on building a Spotify Clone with **Next.js** and **Supabase**, leveraging the power of **TypeScript** for type safety and **Tailwind CSS** for beautiful, responsive styling. This endeavor integrates a robust database, secure user authentication, and essential services like Stripe for payment processing.
+
+---
+
+## 🌟 Features
+
+Here's what makes our Spotify Clone stand out:
+
+- **🔐 User Authentication**: Secure your app with Supabase's robust authentication system.
+- **🗄️ Database Integration**: Handle your data efficiently using Supabase.
+- **💳 Payment Processing**: Seamlessly manage subscriptions with Stripe integration.
+- **📱 Responsive Design**: Enjoy a stunning and responsive UI crafted with Tailwind CSS.
+- **🌐 State Management**: Manage global state effortlessly with Zustand.
+- **📝 Forms Handling**: Simplify form handling using React Hook Form.
+- **🔔 Toasts Notifications**: Keep users informed with friendly notifications from React Hot Toast.
+
+---
+
+## ⚙️ Tech Stack
+
+Here's a quick rundown of the technologies we used:
+
+- **Framework**: Next.js
+- **Backend**: Supabase
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+
+---
+
+## 🛠️ Dependencies
+
+Our project relies on several key dependencies:
+
+```markdown
+"dependencies": {
+  "@radix-ui/react-dialog": "^1.1.1",
+  "@supabase/auth-helpers-nextjs": "^0.10.0",
+  "@supabase/auth-helpers-react": "^0.5.0",
+  "@supabase/auth-ui-react": "^0.4.7",
+  "@supabase/auth-ui-shared": "^0.1.8",
+  "next": "14.2.4",
+  "query-string": "^9.0.0",
+  "react": "^18",
+  "react-dom": "^18",
+  "react-hook-form": "^7.52.1",
+  "react-hot-toast": "^2.4.1",
+  "react-icons": "^5.2.1",
+  "stripe": "^16.1.0",
+  "tailwind-merge": "^2.3.0",
+  "uniqid": "^5.4.0",
+  "zustand": "^4.5.4"
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Ready to dive in? Follow these steps to get the project up and running on your local machine.
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+Ensure you have the following installed:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Node.js
+- npm or yarn
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Installation
 
-## Deploy on Vercel
+1. **Clone the repository:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```sh
+    git clone https://github.com/pujanjoci/spotify-clone.git
+    cd spotify-clone
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. **Install dependencies:**
+
+    ```sh
+    npm install
+    # or
+    yarn install
+    ```
+
+3. **Set up environment variables:**
+
+    - Create a `.env.local` file in the root directory.
+    - Add your Supabase and Stripe credentials.
+
+4. **Run the development server:**
+
+    ```sh
+    npm run dev
+    # or
+    yarn dev
+    ```
+
+5. **Open your browser and navigate to `http://localhost:3000`.**
+
+---
+
+## 🎵 Usage
+
+- **Authentication**: Register and log in to access your music library.
+- **Music Streaming**: Browse and play songs from the available collection.
+- **Subscription**: Manage your subscription via Stripe integration.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! If you have any suggestions or improvements, feel free to open an issue or submit a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgements
+
+A huge thanks to the following technologies and communities:
+
+- Next.js
+- Supabase
+- Tailwind CSS
+- Stripe
+- React Hook Form
+- React Hot Toast
+
+Special thanks to [Coding with Antonio](https://codingwithantonio.com) for providing a detailed breakdown for creating a Spotify clone.
+
+---
+
+## 📬 Contact
+
+Have questions or feedback? Reach out to me at [pujanjoci01@gmail.com](mailto:pujanjoci01@gmail.com).
+
+---
+
+Happy coding! 🚀
