@@ -37,7 +37,11 @@ export const MyUserContextProvider = (props: Props) => {
 
   const getUserDetails = () => supabase.from('users').select('*').single();
   const getSubscription = () =>
-    supabase.from('subscriptions').select('*, prices(*, products(*))').in('status', ['trialing', 'active']).single();
+    supabase
+      .from('subscriptions')
+      .select('*, prices(*, products(*))')
+      .in('status', ['trialing', 'active'])
+      .single();
 
   useEffect(() => {
     if (user && !isLoadingData && !userDetails && !subscription) {

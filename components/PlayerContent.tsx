@@ -108,34 +108,80 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
         </div>
 
         <div 
-          className="flex md:hidden col-auto w-full justify-end items-center"
+          className="
+            flex 
+            md:hidden 
+            col-auto 
+            w-full 
+            justify-end 
+            items-center
+          "
         >
           <div 
             onClick={handlePlay} 
-            className="h-10 w-10 flex items-center justify-cente  rounded-full bg-white p-1 cursor-pointer"
+            className="
+              h-10
+              w-10
+              flex 
+              items-center 
+              justify-center 
+              rounded-full 
+              bg-white 
+              p-1 
+              cursor-pointer
+            "
           >
             <Icon size={30} className="text-black" />
           </div>
         </div>
 
         <div 
-          className="hidden h-full md:flex justify-center items-center w-full max-w-[722px] gap-x-6"
+          className="
+            hidden
+            h-full
+            md:flex 
+            justify-center 
+            items-center 
+            w-full 
+            max-w-[722px] 
+            gap-x-6
+          "
         >
           <AiFillStepBackward
             onClick={onPlayPrevious}
             size={30} 
-            className="text-neutral-400 cursor-pointer hover:text-white transition "
+            className="
+              text-neutral-400 
+              cursor-pointer 
+              hover:text-white 
+              transition
+            "
           />
           <div 
             onClick={handlePlay} 
-            className="flex items-center justify-centerh-10w-10 rounded-full bg-white p-1 cursor-pointer"
+            className="
+              flex 
+              items-center 
+              justify-center
+              h-10
+              w-10 
+              rounded-full 
+              bg-white 
+              p-1 
+              cursor-pointer
+            "
           >
             <Icon size={30} className="text-black" />
           </div>
           <AiFillStepForward
             onClick={onPlayNext}
             size={30} 
-            className="text-neutral-400 cursor-pointer hover:text-white transition" 
+            className="
+              text-neutral-400 
+              cursor-pointer 
+              hover:text-white 
+              transition
+            " 
           />
         </div>
 

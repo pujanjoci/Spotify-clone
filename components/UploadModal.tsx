@@ -108,7 +108,7 @@ const UploadModal = () => {
       
       router.refresh();
       setIsLoading(false);
-      toast.success('Song Uploded!');
+      toast.success('Song created!');
       reset();
       uploadModal.onClose();
     } catch (error) {
@@ -139,13 +139,18 @@ const UploadModal = () => {
           id="author"
           disabled={isLoading}
           {...register('author', { required: true })}
-          placeholder="Author Name"
+          placeholder="Song author"
         />
         <div>
           <div className="pb-1">
             Select a song file
           </div>
-          <Input placeholder="test"  disabled={isLoading} type="file" accept=".mp3" id="song" className="hover:bg-neutral-600"
+          <Input
+            placeholder="test" 
+            disabled={isLoading}
+            type="file"
+            accept=".mp3"
+            id="song"
             {...register('song', { required: true })}
           />
         </div>
@@ -153,12 +158,17 @@ const UploadModal = () => {
           <div className="pb-1">
             Select an image
           </div>
-          <Input placeholder="test" disabled={isLoading} type="file" accept="image/*" id="image" className="hover:bg-neutral-600"
+          <Input
+            placeholder="test" 
+            disabled={isLoading}
+            type="file"
+            accept="image/*"
+            id="image"
             {...register('image', { required: true })}
           />
         </div>
-        <Button disabled={isLoading} type="submit" className="text-neutral-300">
-          Upload
+        <Button disabled={isLoading} type="submit">
+          Create
         </Button>
       </form>
     </Modal>
