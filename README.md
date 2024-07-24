@@ -1,4 +1,4 @@
-<h1> 🎧 Spotify Clone: </h1>
+<h1 align="center"> 🎧 Spotify Clone: </h1>
 
 Welcome to the **Spotify Clone** project! This journey showcases how to build a full-featured music streaming application using the latest web technologies.
 
